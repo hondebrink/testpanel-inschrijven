@@ -6,8 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
+   <style>
+    html, body {
+        background: #f3f3f3;
+        padding: 0;
+        margin: 0;
+    }
+    .flex {
+        display: flex;
+        min-height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .iframe-container {
+        border-radius: .5rem;
+        background: #FFF;
+        padding: 1rem;
+        width: 600px;
+        border: 1px solid #eee;
+
+    }
+    .logo {
+        width: 200px;
+        height: auto;
+        position: absolute;
+        top: 1rem;
+        display: block;
+        background: #FFF;
+        padding: 1rem;
+        left: 50%;
+        margin-left: calc(-100px - 1rem);
+        border: 1px solid #eee;
+        border-radius: .5rem;
+    }
+    .logo img {
+        display: block;
+        width: 100%;
+    }
+   </style>
 </head>
-<body>
-    <iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://033uz.mjt.lu/wgt/033uz/xonj/form?c=9ca2ad2c" width="100%" style="height: 0;"></iframe>
-</body>
+    <body>
+        <a class="logo" href="https://preventus.nl/" target="_blank">
+            <img src="logo-preventus.png" alt="Preventus logo" />
+        </a>
+        <div class="flex">
+            <div class="iframe-container">
+                <iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://033uz.mjt.lu/wgt/033uz/xonj/form?c=9ca2ad2c" width="100%" style="height: 0;"></iframe>
+            </div>
+        </div>
+    </body>
 </html>
